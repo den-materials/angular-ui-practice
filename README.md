@@ -192,3 +192,9 @@ Grab one of the animations and add it to your `style.css`
 - What's the difference between CSS transitions and animations? Where might you use one or the other?
 - How do you write an `ngClass` with multiple CSS classes?
 - When do you use `ngClass` vs. normal classes?
+
+
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
