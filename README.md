@@ -1,11 +1,15 @@
+<!-- 10:30 5 minutes -->
+
+<!--Hook: So in the beginning of the class, we introduced the idea of CSS classes, but the only way to apply them was directly in a file.  With DOM manipulation, we made that a little easier and more dynamic.  Now we're about to make it even easier with Angular's built-in features.-->
+
 # Angular UI: ngClass, CSS animations and ngAnimate
 
 ### Objectives
-- Dynamically apply and remove css classes using `ng-class`
-- Animate elements with CSS transitions or keyframe animations
-- Learn how to do animations _the Angular way_ (see lesson 2)
+- **Dynamically apply** and remove css classes using `ng-class`
+- **Animate** elements with CSS transitions or keyframe animations
+- **Do animations** _the Angular way_ (see lesson 2)
 
-## CSS Classes in Angular - Intro (5 mins)
+## CSS Classes in Angular - Intro
 
 As you know, Angular is a great, dynamic front-end framework. One of the things you'll do _most_ often when building a frontend is apply CSS classes to style elements on the page. Having the ability to change those styles based on _data_  can enable you to make some really dynamic interface designs. You certainly have the skills to do this with tools you've already learned, but Angular has a special directive just for this purpose – **ngClass**.
 
@@ -13,13 +17,17 @@ Once we've looked at how Angular helps us apply classes, we'll mix in some non-A
 
 In lesson 2, we'll see how to do animations 'the Angular way'.
 
+<!-- Start by showing finished code in solution_code folder, so devs know basic functionality.-->
+
 ## Starter Code
 
 Let's check out the starter code in `starter-code/app` and see what we're working with. The starter code is a basic Angular app using stuff you've mostly already seen. _(Note: we are stepping back for simplicity. There is no need to install with `bower` or run a server to test this code. Everything here is on the front-end.)_
 
 Take a few minutes and browse through the code that's there and investigate how it works and what it's doing.
 
-## ngClass - Codealong (10 mins)
+<!--10:35 10 minutes -->
+
+## ngClass - Codealong
 
 `ngClass` is a pretty simple directive. There are a couple of possible ways to use it, but it needs to know the name of a class and whether the element should have that class or not - it uses a value of `true` or `false` to decide if it should apply the class.
 
@@ -66,7 +74,9 @@ Would equate to:
 <input ... class="error super so-cool" ... >
 ```
 
-## Angular Form Validation - Independent Practice (10 mins)
+<!-- 10:45 10 minutes -->
+
+## Angular Form Validation - Independent Practice
 
 Angular also has built-in [form validation](https://docs.angularjs.org/guide/forms) for many form fields.
 
@@ -74,8 +84,9 @@ Angular also has built-in [form validation](https://docs.angularjs.org/guide/for
 - Require the user to input a reason for the new winner. Try submitting the form with a blank reason, and see what happens. 
 - Give the reason field a minimum length of three and a maximum length of thirty. (Hint: look at the docs for `input[text]`.) Now what happens if you submit the form with the wrong length reason?  Disable the submit button if the form is invalid (Hint: look up `$invalid`.)
 
+<!-- 10:55 5 minutes -->
 
-## CSS Transitions - Intro (5 mins)
+## CSS Transitions - Intro
 
 Now that we've got that down, let's talk about our other sweet trick – animation in CSS.
 
@@ -91,7 +102,9 @@ It's worth noting that just like visual design, animation is an art. If you real
 
 > **Important note:** Not all transitions or animations work on css-generated pseudo-elements. :before and :after work in some browsers, but not all. Test or check with a reliable source to make sure something works in your target browsers instead of assuming it will.
 
-## CSS Transition Demo (5 minutes)
+<!-- 11:00 5 minutes -->
+
+## CSS Transition Demo
 
 Let's start with transitions - you'll see that those are pretty simple to get started with.
 
@@ -147,7 +160,9 @@ div {
 
 Note also that you can put the time in seconds.
 
-## CSS Animation Demo (5 minutes)
+<!-- 11:10 5 minutes -->
+
+## CSS Animation Demo
 
 Now before we try it ourselves, let's see an animation. Animations are triggered, remember. By default, they are triggered when an object appears or when a class is applied to an object.
 
@@ -188,7 +203,9 @@ Just like a function, we reference the animation with the name we invented.
 
 Grab one of the animations and add it to your `style.css`
 
-## Share & Discuss (10 mins)
+<!-- 11:15 10 minutes -->
+
+## Share & Discuss
 - What's the difference between CSS transitions and animations? Where might you use one or the other?
 - How do you write an `ngClass` with multiple CSS classes?
 - When do you use `ngClass` vs. normal classes?
