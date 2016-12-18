@@ -1,4 +1,4 @@
-<!-- 10:30 5 minutes -->
+<!-- 11:05 5 minutes -->
 
 <!--Hook: So in the beginning of the class, we introduced the idea of CSS classes, but the only way to apply them was directly in a file.  With DOM manipulation, we made that a little easier and more dynamic.  Now we're about to make it even easier with Angular's built-in features.-->
 
@@ -6,18 +6,19 @@
 
 ### Objectives
 - **Dynamically apply** and remove css classes using `ng-class`
+- **Validate** user input with Angular
 - **Animate** elements with CSS transitions or keyframe animations
 - **Do animations** _the Angular way_ (see lesson 2)
 
 ## CSS Classes in Angular - Intro
 
-As you know, Angular is a great, dynamic front-end framework. One of the things you'll do _most_ often when building a frontend is apply CSS classes to style elements on the page. Having the ability to change those styles based on _data_  can enable you to make some really dynamic interface designs. You certainly have the skills to do this with tools you've already learned, but Angular has a special directive just for this purpose – **ngClass**.
+As you know, Angular is a dynamic front-end framework. One of the things you'll do _most_ often when building a frontend is apply CSS classes to style elements on the page. Having the ability to change those styles based on _data_  can enable you to make some really dynamic interface designs. You certainly have the skills to do this with tools you've already learned, but Angular has a special directive just for this purpose – **ngClass**.
 
 Once we've looked at how Angular helps us apply classes, we'll mix in some non-Angular-specific strategies to add subtle animation to our style with CSS. Little things like CSS animation can really boost the credibility of your design – _if_ you use it well. As a first step, you have to know how to use it at all.
 
 In lesson 2, we'll see how to do animations 'the Angular way'.
 
-<!-- Start by showing finished code in solution_code folder, so devs know basic functionality.-->
+<!-- Start by showing finished app from solution_code folder, so devs know basic functionality.-->
 
 ## Starter Code
 
@@ -25,7 +26,7 @@ Let's check out the starter code in `starter-code/app` and see what we're workin
 
 Take a few minutes and browse through the code that's there and investigate how it works and what it's doing.
 
-<!--10:35 10 minutes -->
+<!--11:10 10 minutes -->
 
 ## ngClass - Codealong
 
@@ -74,19 +75,25 @@ Would equate to:
 <input ... class="error super so-cool" ... >
 ```
 
-<!-- 10:45 10 minutes -->
+<!-- 11:20 10 minutes -->
 
 ## Angular Form Validation - Independent Practice
 
 Angular also has built-in [form validation](https://docs.angularjs.org/guide/forms) for many form fields.
 
+The following documentation will be useful as you work through the exercises below:
+
+- [ng-maxlength](https://docs.angularjs.org/api/ng/directive/ngMaxlength)
+- [ng-minlength](https://docs.angularjs.org/api/ng/directive/ngMinlength)
+- [Angular validation and $invalid](http://www.w3schools.com/angular/angular_validation.asp)
+
 - Add a field to the form for a "reason" for the award, and update the list of winners to display why they won.
-- Require the user to input a reason for the new winner. Try submitting the form with a blank reason, and see what happens. 
-- Give the reason field a minimum length of three and a maximum length of thirty. (Hint: look at the docs for `input[text]`.) Now what happens if you submit the form with the wrong length reason?  Disable the submit button if the form is invalid (Hint: look up `$invalid`.)
+- Require the user to input a reason for the new winner. (Hint: what HTML attribute would we use for this?) Try submitting the form with a blank reason, and see what happens. 
+- Give the reason field a minimum length of three and a maximum length of thirty. (Hint: look at the docs above.) Now what happens if you submit the form with the wrong length reason?  Disable the submit button if the form is invalid. (Hint: look up `$invalid`.)
 
-<!-- 10:55 5 minutes -->
+<!-- 11:30 5 minutes -->
 
-## CSS Transitions - Intro
+## CSS Transitions and Animations - Review
 
 Now that we've got that down, let's talk about our other sweet trick – animation in CSS.
 
@@ -102,9 +109,11 @@ It's worth noting that just like visual design, animation is an art. If you real
 
 > **Important note:** Not all transitions or animations work on css-generated pseudo-elements. :before and :after work in some browsers, but not all. Test or check with a reliable source to make sure something works in your target browsers instead of assuming it will.
 
-<!-- 11:00 5 minutes -->
+<!-- 11:35 10 minutes -->
 
 ## CSS Transition Demo
+
+<!--Half-mast -->
 
 Let's start with transitions - you'll see that those are pretty simple to get started with.
 
@@ -140,6 +149,8 @@ form:hover {
 }
 ```
 
+<!--Show the result at this step -->
+
 Now the fun part:
 
 ```css
@@ -151,6 +162,8 @@ form {
 
 The `all` means that all CSS properties will be affected by this transition. The `300ms` says the transition should last that long, in milliseconds, and the `ease-in-out` is one of a few choices that we have for _easing_. Easing makes the animation look more natural. You can list out individual properties with different transition effects like this:
 
+<!--Show the results now and turn over to devs -->
+
 ```
 div {
   transition: background 0.2s ease,
@@ -160,7 +173,7 @@ div {
 
 Note also that you can put the time in seconds.
 
-<!-- 11:10 5 minutes -->
+<!-- 11:45 5 minutes -->
 
 ## CSS Animation Demo
 
@@ -184,6 +197,8 @@ We do that by creating a special `@keyframes` rule, and we name it whatever we l
 }
 ```
 
+<!-- Show result at this step (nothing happens) -->
+
 Of course, nearly any properties can be changed in each frame, and nearly any percentages can be included. You could have 100 keyframes if you want, or just two.
 
 Once you have an animation defined, here's how you'd use it:
@@ -195,6 +210,8 @@ ol li {
 }
 ```
 
+<!--Show result at this step and turn over to devs -->
+
 Just like a function, we reference the animation with the name we invented.
 
 **Try refreshing the page** – see how it now fades in? **Try adding a name.** See how it fades?
@@ -203,14 +220,12 @@ Just like a function, we reference the animation with the name we invented.
 
 Grab one of the animations and add it to your `style.css`
 
-<!-- 11:15 10 minutes -->
+<!-- 11:50 5 minutes -->
 
 ## Share & Discuss
 - What's the difference between CSS transitions and animations? Where might you use one or the other?
 - How do you write an `ngClass` with multiple CSS classes?
 - When do you use `ngClass` vs. normal classes?
-
-
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
