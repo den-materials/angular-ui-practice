@@ -1,5 +1,7 @@
 <!-- 11:05 5 minutes -->
 
+<!--Actually started 11:36 -->
+
 <!--Hook: So in the beginning of the class, we introduced the idea of CSS classes, but the only way to apply them was directly in a file.  With DOM manipulation, we made that a little easier and more dynamic.  Now we're about to make it even easier with Angular's built-in features.-->
 
 # Angular UI: ngClass, CSS animations and ngAnimate
@@ -82,6 +84,8 @@ Would equate to:
 Angular also has built-in [form validation](https://docs.angularjs.org/guide/forms) for many form fields.
 
 The following documentation will be useful as you work through the exercises below:
+
+<!--Actually 11:54 when turning over to devs -->
 
 - [ng-maxlength](https://docs.angularjs.org/api/ng/directive/ngMaxlength)
 - [ng-minlength](https://docs.angularjs.org/api/ng/directive/ngMinlength)
@@ -219,6 +223,8 @@ Just like a function, we reference the animation with the name we invented.
 [Here is a great CSS animation library](https://daneden.github.io/animate.css/)
 
 Grab one of the animations and add it to your `style.css`
+
+<!--Actually 12:18 -->
 
 <!-- 11:50 5 minutes -->
 
