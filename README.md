@@ -38,7 +38,7 @@ As you can imagine, `ngClass` can be applied to any HTML tag. If it can handle n
 
 Now let's give this a shot: Like in our finished example, we want to apply a class of `error` – we've already got a style for that that will make the borders red so it's obvious something's wrong.
 
-We need a boolean expression that will tell us if there's an "error" or not. For simplicity's sake, let's say that our only validation is whether the text of the input is four or more characters. The number here is arbitrary.
+We need a boolean expression that will tell us if there's an "error" or not. For simplicity's sake, let's say that our only validation is whether the text of the input is four or more characters.
 
 We've got this:
 
@@ -111,7 +111,7 @@ They both result in styles changing over time, and neither one gives you any ext
 
 It's worth noting that just like visual design, animation is an art. If you really like using animation, take some time to research the basic principles of animation for interfaces. You (and your users) will be glad you did.
 
-> **Important note:** Not all transitions or animations work on css-generated pseudo-elements. :before and :after work in some browsers, but not all. Test or check with a reliable source to make sure something works in your target browsers instead of assuming it will.
+> **Important note:** Not all transitions or animations work on css-generated pseudo-elements. For example, `:before` and `:after` work in some browsers, but not all. Test or check with a reliable source to make sure something works in your target browsers instead of assuming it will.
 
 <!-- 11:35 10 minutes -->
 
