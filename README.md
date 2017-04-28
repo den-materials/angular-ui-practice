@@ -1,3 +1,4 @@
+<!--11:03 WDI3 -->
 <!-- 11:05 5 minutes -->
 
 <!--Actually started 11:36 -->
@@ -28,6 +29,7 @@ Let's check out the starter code in `starter-code/app` and see what we're workin
 
 Take a few minutes and browse through the code that's there and investigate how it works and what it's doing.
 
+<!--WDI3 11:11 -->
 <!--11:10 10 minutes -->
 
 ## ngClass - Codealong
@@ -78,6 +80,7 @@ Would equate to:
 ```
 
 <!-- 11:20 10 minutes -->
+<!--11:22 turning over to devs WDI3 -->
 
 ## Angular Form Validation - Independent Practice
 
@@ -95,6 +98,7 @@ The following documentation will be useful as you work through the exercises bel
 - Require the user to input a reason for the new winner. (Hint: what HTML attribute would we use for this?) Try submitting the form with a blank reason, and see what happens. 
 - Give the reason field a minimum length of three and a maximum length of thirty. (Hint: look at the docs above.) Now what happens if you submit the form with the wrong length reason?  Disable the submit button if the form is invalid. (Hint: look up `$invalid`.)
 
+<!--11:34 WDI3 ->
 <!-- 11:30 5 minutes -->
 
 ## CSS Transitions and Animations - Review
@@ -113,6 +117,8 @@ It's worth noting that just like visual design, animation is an art. If you real
 
 > **Important note:** Not all transitions or animations work on css-generated pseudo-elements. For example, `:before` and `:after` work in some browsers, but not all. Test or check with a reliable source to make sure something works in your target browsers instead of assuming it will.
 
+<!--11:37 WDI3 -->
+<!--11:40 turning to devs WDI3 -->
 <!-- 11:35 10 minutes -->
 
 ## CSS Transition Demo
@@ -224,14 +230,19 @@ Just like a function, we reference the animation with the name we invented.
 
 Grab one of the animations and add it to your `style.css`
 
-<!--Actually 12:18 -->
+<!--11:48 to devs WDI3 -->
 
+
+<!--Actually 12:18 WDI2-->
+<!--11:52 WDI3 -->
 <!-- 11:50 5 minutes -->
 
 ## Share & Discuss
 - What's the difference between CSS transitions and animations? Where might you use one or the other?
 - How do you write an `ngClass` with multiple CSS classes?
 - When do you use `ngClass` vs. normal classes?
+
+<!--11:55 WDI3 -->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
